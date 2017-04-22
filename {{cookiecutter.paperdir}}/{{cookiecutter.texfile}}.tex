@@ -1,3 +1,4 @@
+{% raw %}
 \documentclass[manuscript]{aastex6}
 
 % to-do list
@@ -64,14 +65,15 @@
 
 
 \begin{document}\sloppy\sloppypar\raggedbottom\frenchspacing % trust me
+{% endraw %}
 
-\title{{{cookiecutter.papertitle}}}
+\title{ {{cookiecutter.papertitle}} }
 
 \author{
   {{cookiecutter.lead_author}} \etal
 }
 
-
+{% raw %}
 % Affiliations
 \newcommand{\pu}{1}
 \newcommand{\lead}{2}
@@ -100,6 +102,11 @@
 \section{Introduction} % (fold)
 \label{sec:introduction}
 
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet (\citealt{nothing}).
+
 % section introduction (end)
 
 
@@ -107,3 +114,4 @@
 % \bibliography{ref}
 
 \end{document}
+{% endraw %}
