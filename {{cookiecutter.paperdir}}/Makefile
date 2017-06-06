@@ -9,7 +9,7 @@ NAME = {{cookiecutter.texfile}}
 
 all: ${NAME}.pdf
 
-${NAME}.pdf: ${NAME}.tex aastexmods.tex $(wildcard figures/*.pdf)
+${NAME}.pdf: ${NAME}.tex $(wildcard figures/*.pdf)
 	if [ -a ref.local.bib ] ; \
 	then \
 		bibexport -a -o ref.bib ref.local.bib ; \
