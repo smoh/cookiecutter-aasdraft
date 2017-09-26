@@ -1,6 +1,6 @@
 # Cookiecutter-aasdraft
 
-Minimal cookiecutter template for AASTeX6 paper with a few adjustments (in `aastexmods.tex`).
+Minimal cookiecutter template for AASTeX6.1 paper.
 
 Once you have [Cookiecutter](https://github.com/audreyr/cookiecutter) installed,
 simply do

@@ -2,10 +2,10 @@
   "paperdir": "paper",
   "texfile": "ms",
   "papertitle": "Enter paper title",
-  "lead_author": "Semyeong Oh",
+  "authors": "Semyeong Oh",
   "_copy_without_render": [
         "aasjournal.bst",
-        "aastex6.cls",
-        "aastexmods.tex"
+        "aastex61.cls",
+        ".gitignore"
     ]
 }
