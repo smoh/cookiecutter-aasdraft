@@ -16,5 +16,5 @@ The following will be created:
 ├── aasjournal.bst
 ├── aastex61.cls
 ├── figures/
-└── ms.tex
+└── [filename].tex
 ```
