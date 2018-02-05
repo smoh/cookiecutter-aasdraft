@@ -9,11 +9,8 @@ NAME = {{cookiecutter.texfile}}
 
 all: ${NAME}.pdf
 
+
 ${NAME}.pdf: ${NAME}.tex $(wildcard figures/*.pdf)
-	if [ -a ref.local.bib ] ; \
-	then \
-		bibexport -a -o ref.bib ref.local.bib ; \
-	fi;
 	${LATEX} ${NAME}
 	bibtex ${NAME}
 	${LATEX} ${NAME}
@@ -23,7 +20,6 @@ ${NAME}.pdf: ${NAME}.tex $(wildcard figures/*.pdf)
 
 clean:
 	${RM} $(foreach suff, ${TMP_SUFFS}, ${NAME}.${suff})
-	${RM} aastexmods.aux
 	${RM} *Notes.bib
 
 # When actually submitting, the AAS webform does not allow
